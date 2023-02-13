@@ -18,7 +18,7 @@ const Products = () => {
         data-aos-delay="200"
         data-aos-easing="ease-in-out"
       >
-        Daylight Products
+        Products
       </div>
       <div className="products-options aic">
         <Icon
