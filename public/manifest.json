@@ -1,0 +1,13 @@
+{
+  "short_name": "Daylight Protocol",
+  "name": "Daylight Protocol | DeFi Redefined. Generative Wealth with 160K% APY.",
+  "icons": [
+    {
+      "src": "192x192.jpg",
+      "type": "image/jpg",
+      "sizes": "1200x627"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

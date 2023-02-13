@@ -1,0 +1,39 @@
+.products--container {
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 128px 32px;
+  gap: 32px;
+}
+.products--title {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}
+.products-options {
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.products-option {
+  width: 566px;
+  height: 496px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 680px) {
+  .products--container {
+    padding: 128px 0px;
+  }
+  .products--title {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 0px 32px;
+  }
+  .products-option {
+    width: 320px;
+    height: 320px;
+  }
+}

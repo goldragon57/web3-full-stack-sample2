@@ -1,0 +1,105 @@
+.header-container-outer {
+  backdrop-filter: saturate(180%) blur(20px);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  max-width: 1440px;
+  padding: 16px;
+}
+
+.header--brand {
+  width: 111.44px;
+  height: 63.56px;
+}
+.header--links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.header--link {
+  font-family: "Dongle";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: white;
+  text-decoration: none;
+}
+.header--link-options {
+  gap: 8px;
+  position: relative;
+}
+.header--link-options-list {
+  width: 140px;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  top: 30px;
+  background: rgba(0, 0, 0, 0.8);
+
+  border-radius: 10px;
+  padding: 8px;
+  backdrop-filter: saturate(180%) blur(20px);
+
+  border: 2px solid #ffffff;
+  visibility: hidden;
+  transition: 500ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+  opacity: 0;
+}
+.header--link-options:hover .header--link-tab {
+  transform: rotate(180deg);
+}
+.header--link-options:hover .header--link-options-list {
+  visibility: visible;
+  opacity: 1;
+}
+.header--link-options-list-option-disable {
+  opacity: 0.5;
+}
+.header--link-tab {
+  transition: 500ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+  width: 8px;
+  height: 8px;
+}
+.header--social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.header--social-icon {
+  width: 32px;
+  height: 32px;
+}
+.header--mobile {
+  display: none;
+}
+@media screen and (max-width: 1120px) {
+  .header--mobile {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .header--links,
+  .header--social {
+    display: none;
+  }
+  .header-container {
+    justify-content: space-between;
+    gap: 0px;
+    max-width: 100%;
+    width: 100%;
+
+    /* margin-top: 24px; */
+    /* padding: 0px 16px; */
+  }
+}

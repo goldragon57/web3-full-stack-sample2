@@ -1,0 +1,40 @@
+.roadmap--container {
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 64px 0px 128px;
+  width: 100%;
+  gap: 32px;
+}
+/* .roadmap--title {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+} */
+.roadmap-option {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.roadmap-option-mobile {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .roadmap--container {
+    padding: 128px 24px;
+  }
+  /* .roadmap--title {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 0px 32px;
+  } */
+  .roadmap-option {
+    display: none;
+  }
+  .roadmap-option-mobile {
+    display: flex;
+  }
+}

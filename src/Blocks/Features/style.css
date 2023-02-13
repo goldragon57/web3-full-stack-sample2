@@ -1,0 +1,43 @@
+.features-container {
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 128px 32px;
+  gap: 32px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.features-icon {
+  width: 53.22px;
+  height: 53.68px;
+}
+.features--title {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 71px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.features--cards {
+  width: 100%;
+  cursor: grab;
+  position: relative;
+  z-index: 1;
+}
+.features--arrow {
+  width: 62.62px;
+  height: 32px;
+}
+
+@media screen and (max-width: 420px) {
+  .features--title {
+    font-size: 36px;
+    line-height: 42px;
+    padding: 0px 32px;
+  }
+}

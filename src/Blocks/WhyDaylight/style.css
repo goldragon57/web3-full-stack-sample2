@@ -1,0 +1,93 @@
+.whydaylight-container {
+  padding: 128px 32px;
+  gap: 128px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.whydaylight--left {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 32px;
+  width: 344.29px;
+}
+
+.whydaylight--left-img {
+  width: 36.98px;
+  height: 50px;
+}
+.whydaylight--left-title {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 64px;
+  color: #ffffff;
+}
+.whydaylight--left-description {
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.whydaylight--right {
+  gap: 32px;
+  width: 700px;
+  flex-direction: column;
+}
+.token-card--container {
+  width: 100%;
+  gap: 32px;
+  align-items: flex-start;
+}
+.whydaylight--right-img {
+  width: 60px;
+  height: 60px;
+}
+.token-card-info {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+}
+.token-card-info-title {
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #ffaf82;
+}
+.token-card-info-desc {
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  /* or 96% */
+
+  color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .whydaylight-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .whydaylight--right {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whydaylight--left {
+    width: 100%;
+  }
+  .whydaylight--right {
+    width: 100%;
+  }
+}

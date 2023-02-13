@@ -1,0 +1,107 @@
+.partners--container {
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 128px 32px;
+    gap: 32px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+
+  .partners--title {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .partners-icon {
+    width: 50.55px;
+    height: 50px;
+    margin-right: 50px;
+  }
+
+  .partners--title--text {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 63.8px;
+    text-align: center;
+  
+    color: #ffffff;
+  }
+
+  .partners--body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners--img {
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    }
+  .partners--cards {
+    max-width: 40%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin: 46px;
+  }
+
+  .partners--arrow {
+    width: 62.62px;
+    height: 32px;
+  }
+
+  .partners--subline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .partners--title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .partners-icon {
+      width: 50.55px;
+      height: 50px;
+      margin-right: 0px;
+    }
+    
+    .partners--title--text {
+      font-size: 36px;
+      line-height: 42px;
+      padding: 0px 32px;
+    }
+    
+
+    .partners--subline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .partners--cards {
+        max-width: 100%;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        margin: 10px 0px;
+    }
+
+    .partners--img {
+        max-width: 100%;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+
+    }
+  }
+  

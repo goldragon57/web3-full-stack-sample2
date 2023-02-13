@@ -1,0 +1,8 @@
+.body-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(179.31deg, #000000 94.26%, #95371d 99.4%);
+  /* background: linear-gradient(178.9deg, #000000 45.19%, #95371d 99.06%); */
+  justify-content: flex-start;
+  flex-direction: column;
+}

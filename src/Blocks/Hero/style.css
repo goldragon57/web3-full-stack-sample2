@@ -1,0 +1,139 @@
+.hero--shell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  /* max-height: 1800px; */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero--background {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.hero--single {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+.hero--fenix {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.icon--imgbg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 100px;
+}
+.hero-container-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  padding: 100px 0px;
+  min-height: 100vh;
+}
+.hero-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 90px;
+  padding: 0px 32px;
+  width: 100%;
+}
+.hero--left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 648px;
+}
+.hero--left-title {
+  width: 533.14px;
+
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 64px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hero--left-description-a {
+  width: 399.8px;
+  height: 115px;
+  font-family: "Dongle";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.hero--left-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.hero--right {
+  width: 253.81px;
+  height: 100%;
+  content: " ";
+}
+@media screen and (max-width: 1000px) {
+  .hero--right {
+    display: none;
+  }
+  .hero--left {
+    margin-top: 100px;
+    width: 648px;
+  }
+}
+@media screen and (max-width: 675px) {
+  .hero--left {
+    width: 100%;
+  }
+  .hero--left-title {
+    width: 100%;
+    align-items: flex-start;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .hero--left-description-a {
+    width: 100%;
+    height: 100%;
+  }
+  .hero--left-buttons {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  .hero--left-buttons div {
+    width: 100%;
+  }
+}

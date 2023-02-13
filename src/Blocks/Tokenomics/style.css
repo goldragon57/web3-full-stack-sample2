@@ -1,0 +1,28 @@
+.tokenomics--container {
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0px 0px 128px;
+  width: 100%;
+  gap: 32px;
+}
+
+.tokenomics-option {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+.tokenomics-option-mobile {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .tokenomics--container {
+    padding: 128px 24px;
+  }
+
+  .tokenomics-option {
+    display: none;
+  }
+  .tokenomics-option-mobile {
+    display: flex;
+  }
+}
